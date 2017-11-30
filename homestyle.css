@@ -13,47 +13,47 @@ p {
   margin-right: auto;
 }
 
-h3{
+h3 {
   text-align: center;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px 215px 16px 215px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 215px 16px 215px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111111;
+  background: url(https://cdn.pixabay.com/photo/2016/03/31/19/13/atom-1294810__340.png) 50% 50% no-repeat;
 }
 
-.mainimg{
+.mainimg {
   display: block;
   margin: auto;
 }
 
-.chemimg{
+.chemimg {
   display: none;
 }
 
-.phyimg{
+.phyimg {
   display: none;
 }
 
-.mathimg{
+.mathimg {
   display: none;
 }
