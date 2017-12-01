@@ -9,11 +9,12 @@ $(document).ready(function() {
 
   // on hover of any of the following classnames
   $(".phylink, .chemlink, .mathlink").hover(function() {
+    console.log("hover");
     var thisClass = this.className || "",
       imgUrl = "https://cdn.pixabay.com/" + images[thisClass];
     $(".switcher").attr("src", imgUrl);
   }, function() {
-    console.log("unhover")
+    console.log("unhover");
     var imgUrl = "https://cdn.pixabay.com/" + images["book"];
     $(".switcher").attr("src", imgUrl);
   })
