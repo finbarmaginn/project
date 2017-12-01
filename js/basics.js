@@ -12,14 +12,17 @@
   1 = Integer / Number
 
   "1" = String
-
+  ------------------------------------------------------------------------------
+  JSON = JavaScript Object Notation:
+  ------------------------------------------------------------------------------
   [{}, {}, {}] = array of objects
-
   ["Talking", "Muck"] = array of strings
 
-  var person = {name: "foobar", source: "value", age: 10}: simple object example:
-    each property has a value attached to it. to get the value foobar we need to
-    use the following key: person.name
+  simple object example:
+  var person = {name: "foobar", source: "value", age: 10}
+  each property has a value attached to it (key value pair). to get the value
+  "foobar" from the object we need to use the following key:
+    person.name (will return "foobar")
 
   JSONExample = [
     {
@@ -38,8 +41,13 @@
 
   to access the first person in the array's DOB then you simply type the
   following:
-
   JSONExample[0].dob === "20/09/1990"
+
+  to access the scond perons in the array's name then you would use the
+  following key:
   JSONExample[1].name === "Cormac"
+
+  just some stuff to start thinking about and how you might want to use a JSON
+  as a data structure.
 
 this is the end of a multi line comment */
