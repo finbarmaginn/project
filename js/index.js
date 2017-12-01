@@ -1,24 +1,20 @@
 $(document).ready(function() {
-  // write js to target and do different things to your html elements by using
-  // classes and different id's etc
+  // map out class names to key value structure
+  var images = {
+    "chemlink": "photo/2017/04/16/18/08/test-tube-2235388__340.png",
+    "phylink": "photo/2016/03/31/19/13/atom-1294810__340.png",
+    "mathlink": "photo/2016/07/29/21/42/school-1555910__340.png",
+    "book": "photo/2017/11/12/18/32/book-2943383__340.png"
+  };
 
-  // $(".phylink") will target all html elements in the page that have the class
-  // phylink
-
-  // <img class="chemimg" src="https://cdn.pixabay.com/photo/2017/04/16/18/08/test-tube-2235388__340.png" />
-  // <img class="mathimg" src="https://cdn.pixabay.com/photo/2016/07/29/21/42/school-1555910__340.png" />
-
+  // on hover of any of the following classnames
   $(".phylink, .chemlink, .mathlink").hover(function() {
-    switch (this.className) {
-      case "phylink":
-        $(".switcher").attr("src", "https://cdn.pixabay.com/photo/2016/03/31/19/13/atom-1294810__340.png");
-        break;
-      case "chemlink":
-        $(".switcher").attr("src", "https://cdn.pixabay.com/photo/2017/04/16/18/08/test-tube-2235388__340.png");
-        break;
-      case "mathlink":
-        $(".switcher").attr("src", "https://cdn.pixabay.com/photo/2016/07/29/21/42/school-1555910__340.png");
-        break;
-    }
+    var thisClass = this.className || "",
+      imgUrl = "https://cdn.pixabay.com/" + images[thisClass];
+    $(".switcher").attr("src", imgUrl);
+  }, function() {
+    console.log("unhover")
+    var imgUrl = "https://cdn.pixabay.com/" + images["book"];
+    $(".switcher").attr("src", imgUrl);
   })
 });

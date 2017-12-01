@@ -1,3 +1,11 @@
+div.imageContainer {
+  text-align: center;
+}
+
+div.imageContainer img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: 25px;
   text-align: center;
@@ -39,21 +47,4 @@ li a {
 
 li a:hover {
   background: black;
-}
-
-.mainimg {
-  display: block;
-  margin: auto;
-}
-
-.chemimg {
-  display: none;
-}
-
-.phyimg {
-  display: none;
-}
-
-.mathimg {
-  display: none;
 }
